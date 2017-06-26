@@ -64,7 +64,7 @@ $(function() {
 	
     var _usd = 0.0183;
     var _euro = 0.015;
-    var _plex = 1199;
+    var _plex = 0.36; // rub 1 new plex
     var _whisky = 8346;// http://winestyle.ru/products/Johnnie-Walker-Red-Label-with-box-swing.html
     var _rubRateInterval = null; // for retry
 
@@ -91,7 +91,7 @@ $(function() {
         url += "&typeid=12058&typeid=3841&typeid=2301&typeid=2281"; // 10mn ab, 2xLSE, EM, 2xInvul
         url += "&typeid=3082"; // 6x250mm
         url += "&typeid=31796"; // rigs
-        url += "&typeid=29668"; // plex
+        url += "&typeid=44992"; // new plex
 
         //url = "http://api.eve-central.com/api/marketstat/json?typeid=1230"
 		$.getJSON(url, function(json) {
